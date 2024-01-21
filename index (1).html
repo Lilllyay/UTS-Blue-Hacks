@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>ChatDEI</title>
+
+  <style>
+    #message-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    #message {
+      width: 350px;
+      height: 300px;
+      margin-bottom: 2px;
+      padding: 4px
+    }
+    
+    #newMessage {
+      width: 350px;
+      height: 300px;
+      margin-bottom: 2px;
+      margin-left: 4px;
+      padding: 2px
+    }
+  </style>
+
+  
+</head>
+
+<body>
+  <nav>
+    <div class="logo">ChatDEI</div>
+  </nav>
+
+  <section class="checker">
+    <div class="checker-container">
+      <div class="column-left">
+        <h1>Check stereotypes in your paragraph</h1>
+        <p>Free service test version.</p>
+
+        <form>
+          <div id="message-container">
+            <div>
+              <label for="message">Your message:</label>
+              <textarea id="message" name="message" placeholder="Paste your text here">
+                {{ predictions }}
+              </textarea>
+            </div>
+  
+            <div>
+              <label for="newMessage">Suggestions:</label>
+              <textarea id="newMessage" name="newMessage" placeholder="Suggestions will appear here">
+                {{ predictions }}
+              </textarea>
+            </div>
+          </div>
+            <div>
+              <button type="submit" value="Send">Send</button>
+            </div>
+        </form>
+      </div>
+
+      <div class="column-right">
+        <img src="./DEI.jpg" alt="illustration" class="message-image">
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
