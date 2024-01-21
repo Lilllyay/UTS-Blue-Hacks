@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+{% block content %}
+    <div class="site-header-logo">
+        <h1 class="text-center">
+            Are We Paid Equal
+        </h1>
+    </div>
+    <div class="row p-4">
+        <div class="card m-auto" style="width: 90%;">
+            <div class="card-body">
+                <di id="chart1"></di>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore sunt quis accusamus consequatur sint quam? Nostrum consequatur enim quae cupiditate quidem sapiente optio error sit dolor accusamus illum, possimus ab quas ea unde rem deserunt eveniet ipsa provident laborum laudantium ipsum mollitia labore reiciendis. Necessitatibus eligendi, blanditiis magni impedit quia soluta alias. Qui libero ipsum sed sint. Iusto culpa nihil consectetur, delectus nostrum quam incidunt esse qui corrupti ut laboriosam doloremque, mollitia laborum? Numquam fugit non laudantium cum ullam?
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        var graph1 = {{graph1JSON | safe}}
+        Plotly.plot("chart1",graph1,{})
+    </script>
+{% endblock %}

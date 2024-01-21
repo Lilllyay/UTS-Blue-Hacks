@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+</head>
+
+<style>
+  body {
+    background-color: #fdcc04;
+    margin: 0;
+    padding: 0;
+  }
+
+  .center-text1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  .center-text1 input {
+    width: 200px;
+    height: 25px
+  }
+
+  /**/
+
+  .center-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .center-text input {
+    width: 200px;
+    height: 25px
+  }
+
+
+  /**/
+
+  .center-button {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60pt;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 25pt;
+  }
+
+  p {
+    text-align: center;
+    font-size: 15pt;
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+</style>
+
+<script>
+  function redirectToHomePage() {
+    window.location.href = "index.html";
+  }
+</script>
+
+<body>
+  <nav>
+    <div class="logo">ChatDEI</div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="yourvoice.html">Your Voice</a>
+      <a href="login.html">Log In</a>
+      <a href="aboutus.html">About Us</a>
+
+    </div>
+  </nav>
+
+  <h1>
+    Log<span style="color: #8040bf;"> In</span>
+  </h1>
+  <br>
+  <h2>
+    to your <span style="color: #8040bf;">secure</span> account
+  </h2>
+  <br>
+  <p>
+    ensured privacy for your entered text
+  </p>
+
+  <form>
+    <div class="center-text1">
+      <label for="fname">first name:</label>
+      <input type="text" id="fname" name="fname" placeholder="John">
+    </div>
+
+    <div class="center-text">
+      <label for="lname">last name:</label>
+      <input type="text" id="lname" name="lname" placeholder="Smith">
+    </div>
+
+    <div class="center-text">
+      <label for="email">email:</label>
+      <input type="email" id="email" name="email" placeholder="john.smith@gmail.com">
+    </div>
+
+    <div class="center-text">
+      <label for="pass">password:</label>
+      <input type="password" id="pass" name="pass">
+    </div>
+
+    <div class="center-button">
+      <button value="Send" onclick="window.location.href='index.html'">Submit</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
