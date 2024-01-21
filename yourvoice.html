@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Voice</title>
+
+  <style>
+    body {
+      background-color: #fdcc04;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 60pt;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 25pt;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15pt;
+      margin-left: 450px;
+      margin-right: 450px;
+
+    }
+
+    .center-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    #message-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width=400px height=400px
+      /* Optional: This ensures that the container takes up the full height of the viewport */
+    }
+
+    #message-container textarea {
+      width: 400px;
+      height: 200px;
+      box-sizing: border-box;
+
+    }
+
+    #message {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 2px;
+      padding: 4px
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">ChatDEI</div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="yourvoice.html">Your Voice</a>
+      <a href="login.html">Log In</a>
+      <a href="aboutus.html">About Us</a>
+    </div>
+  </nav>
+  <h1>
+    Your<span style="color: #8040bf;"> Voice</span>
+  </h1>
+  <br>
+  <h2>
+    Your experiences are important to us.
+  </h2>
+  <br>
+  <p>
+    We have analyzed data from the past. Now, we need your input to construct an unprejudiced future.<span
+      style="color: #8040bf;"><b></b></span>
+    Although our data accounts for major racial stereotypes, we realize that we still have limited
+    access to subtle stereotypes. This is caused by a lack of input from users around the world, resulting in
+    incomplete, non-transparent data.
+  </p>
+  <br>
+  <br>
+  <h2>
+    Example
+  </h2>
+  <br>
+  <p>
+    <span style="color: #8040bf;"><b></b></span>
+    Kaggle is world's largest data science community with over 50,000 public datasets. When we searched up "hate
+    language", there are 25 results. However, only 2 showed up with a search for "stereotypes". The most critical
+    problem: One dataset is offensive language with a "stereotypes" label, and the other is only limited to women.
+    <span style="color: #8040bf;"><b>This is why we need you to make our product more inclusive.</b></span>
+
+  </p>
+  <br>
+  <br>
+  <h2>
+    What You Can Do
+  </h2>
+  <br>
+  <p>
+    ChatDEI is a catalyst for change. <span style="color: #8040bf;"><b>You are the same.</b></span>
+    Send us the stereotype that you have witnessed or experienced, and we will update our data to include your input.
+  </p>
+  <br>
+  <p>
+    <span style="color: #8040bf;"><b>Let's break societal barriers together and creating a more equitable environment
+        for all.</b></span>
+    <br>
+    <br>
+  </p>
+  <div class="message-section">
+    <form>
+      <div id="message-container" class="center-text">
+        <div>
+          <label for="message">Your input:</label>
+          <br>
+          <br>
+          <textarea id="message" name="message" placeholder="Let us know here"></textarea>
+        </div>
+      </div>
+      <div class="center-text">
+        <button type="submit" value="Send">Send</button>
+      </div>
+      <br>
+      <br>
+      <br>
+    </form>
+  </div>
+
+</body>
+
+</html>
